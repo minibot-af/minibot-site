@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mini Bot — ربات هوشمند فیش و صرافی روی واتساپ</title>
 <meta name="description" content="Mini Bot ربات واتساپ برای تشخیص خودکار فیش‌های بانکی، نرخ ارز و تأیید پرداخت با هوش مصنوعی. پنل اختصاصی، چند حساب واتساپ و مدیریت آسان.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b100e'/%3E%3Cpath d='M32 12c-11 0-20 8.5-20 19 0 4.2 1.5 8.1 4 11.2L13 52l10.4-2.8c2.7 1.2 5.6 1.8 8.6 1.8 11 0 20-8.5 20-19S43 12 32 12z' fill='%2322e08a'/%3E%3Ccircle cx='25' cy='31' r='3' fill='%230b100e'/%3E%3Ccircle cx='39' cy='31' r='3' fill='%230b100e'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -22,7 +22,8 @@ body{font-family:Vazirmatn,sans-serif;background:var(--bg);color:var(--ink);line
 nav{position:sticky;top:0;z-index:50;background:rgba(11,16,14,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;text-decoration:none;color:var(--ink)}
-.logo svg{width:30px;height:30px}
+.logo img{width:30px;height:30px;border-radius:8px}
+.hero-logo{width:min(190px,42vw);display:block;margin:0 auto 20px;filter:drop-shadow(0 16px 50px rgba(34,224,138,.22))}
 .nav-links{display:flex;gap:26px;align-items:center}
 .nav-links a{color:var(--dim);text-decoration:none;font-size:14.5px;font-weight:500;transition:.2s}
 .nav-links a:hover{color:var(--accent)}
@@ -101,7 +102,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;margin-top:20px}
 <body>
 
 <nav><div class="wrap nav-in">
-  <a class="logo" href="/"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="none" stroke="rgba(34,224,138,.35)" stroke-width="2"/><path d="M32 12c-11 0-20 8.5-20 19 0 4.2 1.5 8.1 4 11.2L13 52l10.4-2.8c2.7 1.2 5.6 1.8 8.6 1.8 11 0 20-8.5 20-19S43 12 32 12z" fill="#22e08a"/><circle cx="25" cy="31" r="3" fill="#0b100e"/><circle cx="39" cy="31" r="3" fill="#0b100e"/></svg>Mini Bot</a>
+  <a class="logo" href="/"><img src="logo.png" alt="Mini Bot">Mini Bot</a>
   <div class="nav-links">
     <a href="#features">امکانات</a>
     <a href="#how">چطور کار می‌کند</a>
@@ -112,6 +113,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;margin-top:20px}
 </div></nav>
 
 <header class="hero"><div class="wrap">
+  <img class="hero-logo" src="logo.png" alt="Mini Bot">
   <div class="badge"><span class="dot"></span>هوش مصنوعی Vision · بدون OCR · پاسخ در چند ثانیه</div>
   <h1>فیش‌های بانکی را ربات بخواند،<br>نه شما! با <span class="grad">Mini Bot</span></h1>
   <p class="sub">Mini Bot روی واتساپ شما می‌نشیند، فیش‌های پرداخت را با هوش مصنوعی می‌خواند، فیش تکراری و تأییدنشده را تشخیص می‌دهد و نرخ‌های ارز را از گروه‌های صرافی جمع می‌کند.</p>
@@ -210,7 +212,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;margin-top:20px}
 </div></section>
 
 <footer><div class="wrap foot">
-  <a class="logo" href="/" style="font-size:17px"><svg viewBox="0 0 64 64" style="width:26px;height:26px"><path d="M32 12c-11 0-20 8.5-20 19 0 4.2 1.5 8.1 4 11.2L13 52l10.4-2.8c2.7 1.2 5.6 1.8 8.6 1.8 11 0 20-8.5 20-19S43 12 32 12z" fill="#22e08a"/><circle cx="25" cy="31" r="3" fill="#0b100e"/><circle cx="39" cy="31" r="3" fill="#0b100e"/></svg>Mini Bot</a>
+  <a class="logo" href="/" style="font-size:17px"><img src="logo.png" alt="Mini Bot">Mini Bot</a>
   <div class="links">
     <a href="#" id="footPanel">پنل کاربران</a>
     <a href="#" id="footAdmin">پنل مدیریت</a>
