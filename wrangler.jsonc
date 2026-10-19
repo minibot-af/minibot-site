@@ -1,0 +1,10 @@
+{
+  // کانفیگ دیپلوی سایت Mini Bot روی Cloudflare Workers (سایت معرفی — کاملاً استاتیک)
+  "name": "mini-bot-site",
+  "compatibility_date": "2026-01-01",
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
